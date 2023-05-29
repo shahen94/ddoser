@@ -51,7 +51,7 @@ func (c *cli) Parse() (*domain.CliParams, error) {
 		},
 		Action: func(c *uCli.Context) error {
 			params.BaseUrl = c.String("url")
-			params.Concurrent = c.Int("workers")
+			params.Concurrent = c.Int("concurrent")
 			params.RequestCount = c.Int("requests")
 			params.Timeout = c.Int("timeout")
 			params.Verbose = c.Bool("verbose")

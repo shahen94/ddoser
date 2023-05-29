@@ -6,3 +6,7 @@ type RequestResult struct {
 	ResponseTime int64
 	Error        bool
 }
+
+type NetworkInterface interface {
+	Request(string, chan *RequestResult)
+}
